@@ -1,0 +1,14 @@
+
+code =  raw_input("请输入您的邀请码:")
+def deal_code(yqm):
+    add_num = "0123456789abcdefghijklmnopqrstuvwxyz"    #可能需要参与迭代的字符串，#
+    for i in range(len(add_num)):
+        new_yqm = yqm.replace("*",add_num[i])
+        return  new_yqm
+if len(code) < 0:
+     print "验证码的位数不够"
+else:
+        deal_code(code)
+
+
+
